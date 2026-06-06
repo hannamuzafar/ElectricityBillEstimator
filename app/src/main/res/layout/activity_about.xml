@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HANNA ADRIANNA BINTI MOHD MUZAFAR"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID : 2024978017"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course : ICT602 Mobile Technology and Development"
+            android:layout_gravity="left"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GitHub Project"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvGithub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://github.com/YOUR_USERNAME/ElectricityBillEstimator"
+            android:layout_marginBottom="15dp"
+            android:textColor="#0000EE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How To Use"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Select a month from the spinner.&#10;2. Enter the electricity unit used.&#10;3. Adjust the rebate percentage using the seek bar.&#10;4. Click the Calculate Bill button.&#10;5. Review the Total Charges and Final Cost.&#10;6. Click Save Record to store the bill information.&#10;7. Click View Records to display saved records.&#10;8. Select a record to view detailed information.&#10;9. Update or delete the selected record if required.&#10;10. Visit the About Page for application information."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2026 Hanna Adrianna. All Rights Reserved.&#10;This application was developed for ICT602 Mobile Technology and Development."
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</ScrollView>
