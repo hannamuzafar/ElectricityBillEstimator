@@ -12,30 +12,46 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Electricity Bill Estimator"
-            android:textSize="28sp"
-            android:textStyle="bold"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Month"/>
-
-        <Spinner
-            android:id="@+id/spMonth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
             android:layout_marginBottom="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Unit Used"/>
+            android:text="Electricity Bill Estimator"
+            android:textColor="#C2185B"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#C2185B"/>
+
+        <Spinner
+            android:id="@+id/spMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="55dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Used"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#C2185B"
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/etUnit"
@@ -43,21 +59,26 @@
             android:layout_height="wrap_content"
             android:hint="Enter electricity unit"
             android:inputType="number"
-            android:layout_marginBottom="10dp"/>
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
 
         <TextView
             android:id="@+id/tvRebate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rebate : 0%"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#C2185B"
+            android:layout_marginBottom="5dp"/>
 
         <SeekBar
             android:id="@+id/seekRebate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="5"
-            android:layout_marginBottom="15dp"/>
+            android:layout_marginBottom="20dp"/>
 
         <Button
             android:id="@+id/btnCalculate"
@@ -67,12 +88,14 @@
             android:backgroundTint="#e37da5"
             android:textColor="#FFFFFF"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
 
             <TextView
                 android:id="@+id/tvTotal"
@@ -82,14 +105,15 @@
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/tvFinal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Final Cost : RM 0.00"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Cost : RM 0.00"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:layout_marginTop="10dp"/>
 
         </LinearLayout>
 
@@ -102,23 +126,32 @@
             android:backgroundTint="#e37da5"
             android:textColor="#FFFFFF"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
         <Button
             android:id="@+id/btnRecord"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="View Records"
-            android:layout_marginTop="10dp"
             android:backgroundTint="#e37da5"
             android:textColor="#FFFFFF"/>
 
         <Button
             android:id="@+id/btnAbout"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="About Application"
-            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="About"
             android:backgroundTint="#e37da5"
             android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
